@@ -1,11 +1,12 @@
-import Sis from './Components/Sis';
+
 import './App.css';
+import ProductList from './Components/ProductList';
 
 
 const App = () => {
   return (
     <div>
-      <Sis/>
+      <ProductList/>
     </div>
   )
 }

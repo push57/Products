@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react';
 import products from './Data';
 import { FaCartPlus } from "react-icons/fa";
 
-const Sis = () => {
+const ProductList = () => {
   const [selected, setSelected] = useState(null);
   const [open, setOpen] = useState(true);
   const [cartItems, setCartItems] = useState([]);
@@ -91,4 +91,4 @@ const Sis = () => {
   );
 };
 
-export default Sis;
+export default ProductList;
