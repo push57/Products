@@ -1,0 +1,156 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+header {
+  background-color: #f0f0f0;
+  padding:0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1{
+  text-align:center;
+  font-size:20px;
+}
+.main-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+.sidebar {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  height:400px;
+  border-radius:30px;
+ /* background: #4169E1;
+  */
+  background: #569bbe;
+}
+.centered-header {
+  border: 1px solid #569bbe;
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+  width: 30%;
+  border-radius:20px;
+}
+.product-card {
+  box-shadow: 7px 7px 5px lightblue;
+}
+button{
+  background: #569bbe;
+  border: 1px solid #569bbe;
+  padding: 5px 13px;
+  border-radius: 10px;
+  color: #fff;
+  margin-top:10px;
+}
+li{
+  text-align: left;
+  list-style:none;
+  padding:5px;
+  line-height: 20px;
+}
+.product-features{
+  display: inline;
+}
+.product-des{
+  line-height:25px;
+}
+.main-category h3 {
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 0.5px;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+}
+.sub-categories {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.sub-categories li {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #000;
+  background: white;
+  margin-bottom: 10px;
+  letter-spacing:1px;
+}
+.sub-categories li.active {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #569bbe;
+  border: 1px solid #fff;
+  background: #fff;
+  letter-spacing:1px;
+}
+.product-list {
+  flex: 1;
+  padding-left: 20px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.cart {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.img-responsive{
+  width:200px;
+}
+.badge{
+  position: absolute;
+  top: -2px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size:10px;
+}
+.message{
+  text-align: end;
+}
+.alert-message{
+  margin:10px;
+}
+button {
+  transition: transform 0.5s ease;
+}
+button:hover {
+  transform: scale(1.2);
+}
+.img-responsive {
+  transition: transform 0.5s ease;
+}
+.img-responsive:hover {
+  transform: scale(1.1);
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .centered-header {
+      width: 60%;
+ }
+  .sidebar{
+      height: 300px;
+ }
+}
